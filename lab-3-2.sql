@@ -2,6 +2,11 @@
 
 -- Expected result:
 --
+Select name, AVG(wins)
+FROM teams
+WHERE year > 2000
+group by name;
+
 -- +-------------------------------+------------------+
 -- | Anaheim Angels                | 85.75            |
 -- | Arizona Diamondbacks          | 76.9             |
